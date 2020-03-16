@@ -1,0 +1,6 @@
+D:\Work\EmployeeManagementConsole\bin\Debug\EmployeeManagementConsole.exe.config
+D:\Work\EmployeeManagementConsole\bin\Debug\EmployeeManagementConsole.exe
+D:\Work\EmployeeManagementConsole\bin\Debug\EmployeeManagementConsole.pdb
+D:\Work\EmployeeManagementConsole\obj\Debug\EmployeeManagementConsole.csprojAssemblyReference.cache
+D:\Work\EmployeeManagementConsole\obj\Debug\EmployeeManagementConsole.exe
+D:\Work\EmployeeManagementConsole\obj\Debug\EmployeeManagementConsole.pdb
