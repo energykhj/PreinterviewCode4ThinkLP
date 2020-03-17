@@ -54,35 +54,6 @@ namespace EmployeeManagementConsole
         }
 
         /// <summary>
-        /// Return list of current active employee
-        /// </summary>
-        /// <returns></returns>
-        public List<Employee> GetActiveEmployee()
-        {
-            var empActGroug = from emp in empList
-                              where emp.status == (int)actStatus.Aactive
-                              select emp;
-
-            return empActGroug.ToList();
-        }
-
-        /// <summary>
-        /// Return list of terminated employee defend on the date
-        /// </summary>
-        /// <param name="dtOfStart">date of start</param>
-        /// <param name="dtOfEnd">date of end</param>
-        /// <returns></returns>
-        public List<Employee> GetTerminatedEmployee(DateTime dtOfStart, DateTime dtOfEnd)
-        {
-            var empActGroug = from emp in empList
-                              where emp.dtOfTerminated >= dtOfStart &&
-                               emp.dtOfTerminated <= dtOfEnd
-                              select emp;
-
-            return empActGroug.ToList();
-        }
-
-        /// <summary>
         /// Add employee
         /// </summary>
         /// <param name="newName"></param>
@@ -119,6 +90,35 @@ namespace EmployeeManagementConsole
             empList.RemoveAll(x => x.id == id);
         }
 
+        /// <summary>
+        /// Return list of current active employee
+        /// </summary>
+        /// <returns></returns>
+        public List<Employee> GetActiveEmployee()
+        {
+            var empActGroug = from emp in empList
+                              where emp.status == (int)actStatus.Aactive
+                              select emp;
+
+            return empActGroug.ToList();
+        }
+
+        /// <summary>
+        /// Return list of terminated employee defend on the date
+        /// </summary>
+        /// <param name="dtOfStart">date of start</param>
+        /// <param name="dtOfEnd">date of end</param>
+        /// <returns></returns>
+        public List<Employee> GetTerminatedEmployee(DateTime dtOfStart, DateTime dtOfEnd)
+        {
+            var empActGroug = from emp in empList
+                              where emp.dtOfTerminated >= dtOfStart &&
+                               emp.dtOfTerminated <= dtOfEnd
+                              select emp;
+
+            return empActGroug.ToList();
+        }
+        
         /// <summary>
         /// Set date of terminate for the test
         /// </summary>
