@@ -70,8 +70,7 @@ namespace EmployeeManagementConsole
                      select emp;
 
             foreach (Employee aEmployee in tEmp)
-            {
-                
+            {                
                 Console.WriteLine($"ID: {aEmployee.Id}, Name: {aEmployee.EmpName}, " +
                     $"set terminated date: {String.Format("{0:MM/dd/yyyy}", aEmployee.DtOfTerminated)}");
             }
